@@ -1,3 +1,27 @@
 :root{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
