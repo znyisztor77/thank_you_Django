@@ -2,6 +2,29 @@
 
 {% block content %}
 <h1>Hello Django</h1>
+
+
+
+<div class = "consuption">
+    <h1 id = "consuption"></h1>
+    <h3>l / 101km</h3>
+</div>
+
+<form action="{% url 'new-refuel' %}" method="post">
+    {% csrf_token %}
+    <label for="">óraállás:</label>
+    <input type="number" name="distance_km" id = "km">
+
+    <label for="">tankolt mennyiség.</label>
+    <input type="number" name="petrol_amount_liter" id = "petrol">
+
+    <label for="">tankolás időpontja:</label>
+    <input type="date" name="refuel_date" id = "date">
+
+    <button type="submit">Beküld</button>
+    <br>
+
+</form>
 <div id ="refuels"></div>
 
 <a href="{% url 'logout' %}">Kijelentkezés</a>

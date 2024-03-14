@@ -16,6 +16,7 @@ body{
 }
 h1{
     margin-bottom: 20px;
+    
 }
 label{
     display: block;
@@ -24,4 +25,14 @@ form{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+.consuption h1,
+.consuption{
+    text-align: center;
+    margin: 0;
+    background-color: aqua;
+}
+
+#refuels{
+  background-color: aquamarine;   
 }
